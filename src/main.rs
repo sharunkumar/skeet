@@ -22,7 +22,7 @@ async fn main() {
         vec.push(pipe);
     }
 
-    let text = vec.join("\n\n").trim();
+    let text = vec.join("\n\n").trim().to_string();
 
     let mut client = ClientBuilder::default().build().unwrap();
 
