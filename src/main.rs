@@ -12,6 +12,18 @@ async fn main() {
 
     let text = std::env::args().collect::<Vec<String>>()[1..].join(" ");
 
+    let mut vec = vec![text];
+
+    if grep_cli::is_readable_stdin() {
+        let mut pipe = String::new();
+
+        std::io::Read::read_to_string(&mut std::io::stdin(), &mut pipe).unwrap();
+
+        vec.push(pipe);
+    }
+
+    let text = vec.join("\n\n");
+
     let mut client = ClientBuilder::default().build().unwrap();
 
     client
