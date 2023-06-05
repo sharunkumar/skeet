@@ -10,9 +10,13 @@ async fn main() {
         }
     }));
 
+    let mut vec: Vec<String> = vec![];
+
     let text = std::env::args().collect::<Vec<String>>()[1..].join(" ");
 
-    let mut vec = vec![text];
+    if text.len() > 0 {
+        vec.push(text);
+    }
 
     if grep_cli::is_readable_stdin() {
         let mut pipe = String::new();
