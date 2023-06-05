@@ -19,3 +19,8 @@ SKEET_PASSWORD - app password. you can create one at https://bsky.app/settings/a
 ```
 skeet <your text here>
 ```
+
+You can also pipe some text from another command
+```
+echo hello | skeet
+```
