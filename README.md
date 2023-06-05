@@ -4,7 +4,7 @@ Skeet from your command line for [Bluesky](https://bsky.app/) or other supported
 
 ## Installation
 ```
-cargo install skeet
+cargo install --locked --git https://github.com/sharunkumar/skeet.git
 ```
 
 ## Environment Setup
