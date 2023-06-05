@@ -9,7 +9,7 @@ description = "Skeet tool for Bluesky"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-bisky = { git = "https://github.com/jesopo/bisky.git" }
+bisky = "0.2.1"
 chrono = "0.4.26"
 url = "2.3.1"
 tokio = { version = "1.27.0", features = ["macros", "rt-multi-thread"] }

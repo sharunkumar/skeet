@@ -42,8 +42,9 @@ checksum = "604178f6c5c21f02dc555784810edfb88d34ac2c73b2eae109655649ee73ce3d"
 
 [[package]]
 name = "bisky"
-version = "0.1.4"
-source = "git+https://github.com/jesopo/bisky.git#3316ee6c9be58fec5b691e67b1f6cd88d0b6fc2f"
+version = "0.2.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "97faf8559869d4e8e350cfb07e93f064c07d9ee646d149118b13f1f375159794"
 dependencies = [
  "async-trait",
  "chrono",
