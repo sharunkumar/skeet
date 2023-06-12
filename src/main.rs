@@ -1,6 +1,7 @@
 use bisky::atproto::ClientBuilder;
 use bisky::bluesky::Bluesky;
 use bisky::lexicon::app::bsky::feed::Post;
+use chrono::{DateTime, NaiveDate, NaiveDateTime, NaiveTime, Utc};
 
 #[tokio::main]
 async fn main() {
@@ -44,11 +45,17 @@ async fn main() {
 
     let mut bsky = Bluesky::new(client);
 
+    let naive_date = NaiveDate::from_ymd(1995, 11, 5);
+
+    let naive_time = NaiveTime::from_hms(0, 0, 0);
+
+    let naive_datetime = NaiveDateTime::new(naive_date, naive_time);
+
     bsky.me()
         .unwrap()
         .post(Post {
             text,
-            created_at: chrono::Utc::now(),
+            created_at: DateTime::from_utc(naive_datetime, Utc),
             rust_type: None,
             embed: None,
             reply: None,
