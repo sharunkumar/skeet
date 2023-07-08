@@ -14,7 +14,7 @@ async fn main() {
 
     let text = std::env::args().collect::<Vec<String>>()[1..].join(" ");
 
-    if text.len() > 0 {
+    if !text.is_empty() {
         vec.push(text);
     }
 
