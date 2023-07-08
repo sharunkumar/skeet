@@ -1,6 +1,6 @@
 [package]
 name = "skeet"
-version = "0.1.5"
+version = "0.1.6"
 edition = "2021"
 license = "MIT"
 description = "Skeet tool for Bluesky"
@@ -10,7 +10,7 @@ repository = "https://github.com/sharunkumar/skeet"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-bisky = "0.2.1"
+bisky = "0.3.0"
 chrono = "0.4.26"
 url = "2.3.1"
 tokio = { version = "1.28.2", features = ["macros", "rt-multi-thread"] }
