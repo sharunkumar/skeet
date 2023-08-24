@@ -13,5 +13,5 @@ repository = "https://github.com/sharunkumar/skeet"
 bisky = "0.3.0"
 chrono = "0.4.26"
 url = "2.4.0"
-tokio = { version = "1.29.1", features = ["macros", "rt-multi-thread"] }
-grep-cli = "0.1.8"
+tokio = { version = "1.32.0", features = ["macros", "rt-multi-thread"] }
+grep-cli = "0.1.9"
