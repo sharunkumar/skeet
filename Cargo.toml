@@ -11,7 +11,7 @@ repository = "https://github.com/sharunkumar/skeet"
 
 [dependencies]
 bisky = "0.3.0"
-chrono = "0.4.26"
-url = "2.4.0"
-tokio = { version = "1.32.0", features = ["macros", "rt-multi-thread"] }
-grep-cli = "0.1.9"
+chrono = "0.4.37"
+url = "2.5.0"
+tokio = { version = "1.37.0", features = ["macros", "rt-multi-thread"] }
+grep-cli = "0.1.10"
