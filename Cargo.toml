@@ -1,6 +1,6 @@
 [package]
 name = "skeet"
-version = "0.1.10"
+version = "0.1.11"
 edition = "2021"
 license = "MIT"
 description = "Skeet tool for Bluesky"
@@ -11,7 +11,7 @@ repository = "https://github.com/sharunkumar/skeet"
 
 [dependencies]
 bisky = "0.3.0"
-chrono = "0.4.37"
+chrono = "0.4.38"
 url = "2.5.0"
 tokio = { version = "1.37.0", features = ["macros", "rt-multi-thread"] }
 grep-cli = "0.1.10"
