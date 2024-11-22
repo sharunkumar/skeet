@@ -25,7 +25,11 @@ You can also pipe some text from another command
 echo hello | skeet
 ```
 
-Pro tip: if you have [gum](https://github.com/charmbracelet/gum) installed, you can use the following command to have a multi-line editor before posting:
-```shell
-gum write | skeet
-```
+> [!TIP]
+> If you have [gum](https://github.com/charmbracelet/gum) installed, you can use the following command to have a multi-line editor before posting:
+> ```shell
+> gum write | skeet
+> ```
+
+> [!NOTE]
+> skeet currently does not support auto-detection of [facets](https://docs.bsky.app/docs/advanced-guides/post-richtext#producing-facets).
